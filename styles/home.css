@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0d1117;
+}
+
+#navbar{
+    background-color: #161b22;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+}
+
+#logo{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#searchbox{
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+
+#search{
+    width: 90%;
+    margin: auto;
+    background-color: #0d1117;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#search:focus{
+    outline: 2px solid royalblue
+}
+
+#options{
+    list-style: none;
+}
+
+#options li{
+    padding-left: 20px;
+    color: whitesmoke;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+#user{
+    width: 10%;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding-right: 30px;
+}
+
+#profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#errorMsg{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    color: linen;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* #container > div{
+    border: 1px solid blue;
+} */
+
+#userInfo{
+    padding: 10px;
+    width: 25%;
+}
+
+#userAvatar{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#userLogin{
+    color: #c8d0d8;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+#resultGrid{
+    width: 70%;
+}
+
+#resultText{
+    color: whitesmoke;
+}
+
+#results{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
+    grid-gap: 30px;
+}
+
+/* #results > div{
+    border: 2px solid grey;
+} */
+
+.repoDiv{
+    border: 1px solid grey;
+    padding: 10px;
+    padding-top: 15px;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    /* position: relative; */
+}
+
+.repoInfoDiv{
+    height: 70%;
+    /* border: 1px solid blue; */
+}
+
+.repoName{
+    color: #135dd3;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.repoDesc{
+    margin-top: 5px;
+    color: #60595c;
+}
+
+.repoLangDiv{
+    margin-top: 10px;
+    height: 25%;
+    padding: 5px;
+    /* border: 1px solid red; */
+}
+
+.repoColor{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* margin-top: 30px; */
+}
+
+
+.repoLang{
+    display: inline-block;
+    color: #60595c;
+    margin-left: 15px;
+}
